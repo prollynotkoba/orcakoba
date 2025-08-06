@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/jpg" href="assets/orca.jpg">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-black bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center" style="background-image: url('assets/orca.jpg');">
+      <!-- Volume Control Top Left -->
+    <div class="fixed top-6 left-6 z-50 flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-lg px-4 py-2 shadow-lg">
+      <img src="assets/volume.svg" class="w-5 h-5 text-white text-sm">
+      <input
+        id="volume"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"
+        class="w-32 accent-white"
+        onchange="document.getElementById('bg-audio').volume = this.value"
+      />
+    </div>
+      <!-- Main Content -->
+      <div class="flex flex-col items-center space-y-6 text-center bg-white/10 backdrop-blur-md rounded-2xl p-12 shadow-2xl border border-white/2 w-full max-w-xl mb-24">
+      <!-- Profile Image -->
+      <img
+        src="assets/koba.jpg"
+        alt="profile"
+        class="w-48 h-48 rounded-full border-4 border-white shadow-lg"
+      />
+
+      <!-- Username and Info -->
+      <div>
+        <h1 class="text-5xl font-bold text-white transition-transform duration-300 hover:scale-100 hover:animate-pulse cursor-pointer drop-shadow-[0_0_10px_white] hover:drop-shadow-[0_0_20px_white] [text-shadow:_2px_2px_0_black,0_2px_0_black,2px_0_0_black]">prollynotkoba</h1>
+        <p class="text-white text-lg mt-2 drop-shadow-[0_0_10px_white] [text-shadow:_2px_2px_0_black,0_2px_0_black,2px_0_0_black]">orca | 𝖍oly</p>
+        <div class="discord-status text-white text-lg mt-2 drop-shadow-[0_0_10px_white] [text-shadow:_2px_2px_0_black,0_2px_0_black,2px_0_0_black]"></div>
+        <div class="discord-activity-container text-white text-lg mt-2 drop-shadow-[0_0_10px_white] [text-shadow:_2px_2px_0_black,0_2px_0_black,2px_0_0_black]"></div>
+        <div class="discord-note text-white text-lg mt-2 drop-shadow-[0_0_10px_white] [text-shadow:_2px_2px_0_black,0_2px_0_black,2px_0_0_black]"></div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-8 mt-6">
+        <a href="https://open.spotify.com/user/31fe5ubzxxut3b3zfceoc2ukverq" target="_blank" title="Spotify">
+          <img src="assets/spotify.png" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="https://discord.gg/uPAHsQxzRU" target="_blank" title="Discord">
+          <img src="assets/discord.svg" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+        <a href="https://instagram.com/@prollynotkoba" target="_blank" title="IG">
+          <img src="assets/ig.png" class="w-8 h-8 hover:scale-110 transition" />
+        </a>
+      </div>
+
+      <!-- Music Player -->
+      <div class="mt-6 w-full max-w-md flex flex-col items-center space-y-2">
+        <audio id="bg-audio" autoplay loop>
+          <source src="assets/MadSkeenLaced - Lightskeen Baby x Madman Stan x Mr. Laced.mp3" type="audio/mp3">
+        </audio>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+        <!-- Footer -->
+  <footer class="w-full text-center text-white text-sm py-4 fixed bottom-0 left-0 z-50">
+    <p>developed by koba</p>
+  </footer>
+</html>

@@ -1,0 +1,76 @@
+      body, html {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }
+      h1, p:hover {
+        cursor: url('assets/star_w.png') 25 25, auto;
+      }
+      h1, p:hover,
+      input[type="range"]:hover {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }
+      input[type="range"] {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }
+
+      a:hover {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }   
+      a:hover,
+      input[type="range"]:hover {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }
+      input[type="range"] {
+        cursor: url('assets/star_w.png') 25 25, pointer;
+      }
+
+
+        .discord-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        .discord-status img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        .discord-activity-container {
+            margin-top: 12px;
+        }
+        .discord-activity-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .discord-activity-state, .discord-activity-timestamp {
+            font-size: 0.85em;
+            color: #b9bbbe;
+        }
+        .status-online { color: #43b581; font-weight: bold; }
+        .status-idle { color: #faa61a; font-weight: bold; }
+        .status-dnd { color: #f04747; font-weight: bold; }
+        .status-offline { color: #747f8d; font-weight: bold; }
+        .activity-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            padding: 10px;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .activity-icon-img { border-radius: 6px; }
+        .activity-title { font-weight: bold; }
+        .activity-detail, .activity-state, .activity-timestamp { font-size: 0.95em; }
+        .activity-buttons { margin-top: 6px; }
+        .activity-button {
+            background: #23272a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 2px 8px;
+            margin-right: 4px;
+            cursor: url('assets/star_w.png') 25 25, pointer;
+            font-size: 0.9em;
+        }
